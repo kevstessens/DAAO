@@ -5,7 +5,9 @@ import java.math.BigInteger;
 
 public class StrColumn extends Column<String>{
 
-    private String name;
+    public StrColumn(String name){
+        super(name);
+    }
 
 
     public Condition equals(Value<String> value) {

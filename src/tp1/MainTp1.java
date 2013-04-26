@@ -1,6 +1,8 @@
 package tp1;
 
 
+import tp1.visitor.ConsoleVisitor;
+
 import static tp1.Const.cons;
 import static tp1.SqlQueryBuilder.sqlQuery;
 
@@ -20,7 +22,10 @@ public class MainTp1 {
                 .limit(5)
                 .build();
 
-        query.visit(System.out);
+        ConsoleVisitor consoleVisitor = new ConsoleVisitor();
+        query.accept(consoleVisitor);
+
+       // query.visit(System.out);
     }
 
 

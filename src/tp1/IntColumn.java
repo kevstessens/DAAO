@@ -1,8 +1,10 @@
 package tp1;
 
 public class IntColumn extends Column<Integer> {
-    private String name;
 
+    public IntColumn(String name){
+        super(name);
+    }
 
     public Condition greaterThan(Value<Integer> value) {
         return null;  //To change body of created methods use File | Settings | File Templates.

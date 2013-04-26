@@ -1,41 +1,45 @@
 package tp1;
 
-import java.io.PrintStream;
+import tp1.visitor.QueryVisitor;
+import tp1.visitor.Visitable;
+
 import java.util.List;
 
 
-public class SqlQuery {
-    private final List<Column> select;
-    private final List<Table> from;
-    private final Condition where;
-    private final List<Column> order;
+public class SqlQuery implements Visitable {
+    private final List<Column> selectColumns;
+    private final List<Table> fromColumns;
+    private final Condition whereClause;
+    private final List<Column> orderByColumns;
     private final List<Column> groupByColumns;
+    private final int limit;
 
-    SqlQuery(List<Column> select, List<Table> from, Condition condition,
-             List<Column> order, List<Column> groupByColumns) {
-        this.select = select;
-        this.from = from;
-        this.where = condition;
-        this.order = order;
+    SqlQuery(List<Column> selectColumns, List<Table> fromColumns, Condition condition,List<Column> orderByColumns, List<Column> groupByColumns, int limit) {
+        this.selectColumns = selectColumns;
+        this.fromColumns = fromColumns;
+        this.whereClause = condition;
         this.groupByColumns = groupByColumns;
+        this.orderByColumns = orderByColumns;
+        this.limit = limit;
     }
 
-    @Override public String toString() {
+    /*@Override
+    public String toString(){
         final StringBuilder builder = new StringBuilder("SELECT ");
-        if (select.isEmpty())
+        if (selectColumns.isEmpty())
             builder.append("* ");
         else {
-            builder.append(createSVFromList(select, ", "));
+            builder.append(createSVFromList(selectColumns, "", ", ", ""));
         }
 
-        if (from.size() == 0)
-            throw new Exception("At least one table needed to build sqlQuery");
+        if (fromColumns.size() == 0)
+            return "";
         else {
-            query += "FROM " + createSVFromList(from, ", ");
+           builder.append(createSVFromList(fromColumns, "", ", ", ""));
         }
 
-        if (where.size() > 0)
-            query += "WHERE " + createSVFromList(where, " AND ");
+        if (whereClause != null)
+            builder.append("WHERE " + createSVFromList(whereClause,));
 
         if (order.size() > 0)
             query += createSVFromList(order, ", ");
@@ -45,31 +49,38 @@ public class SqlQuery {
 
         //todo groupby clause
 
-        return super.toString();    //To change body of overridden methods use File | Settings | File Templates.
-    }
+        return super.toString();
+    } */
 
-    public String getQuery() {
-        return query;
+    private String createSVFromList(List<?> list, String first, String separator, String end) {
+       String stringList = ""+ first;
+        for (int i=0; i< list.size()-1; i++) {
+            stringList += list.get(i).toString() + separator;
+        }
+        if(!list.isEmpty()){
+            stringList += list.get(list.size()-1).toString();
+        }
+        stringList += end;
+        return  stringList;
     }
-
-    public void visit(Visitor visitor)
-    {
+   /*
+    public void visit(QueryVisitor visitor){
 
         final StringBuilder builder = new StringBuilder("SELECT ");
-        if (select.isEmpty())
+        if (selectColumns.isEmpty())
             builder.append("* ");
         else {
-            builder.append(createSVFromList(select, ", "));
+            builder.append(createSVFromList(selectColumns, ", "));
         }
 
-        if (from.size() == 0)
+        if (fromColumns.size() == 0)
             throw new Exception("At least one table needed to build sqlQuery");
         else {
-            query += "FROM " + createSVFromList(from, ", ");
+            query += "FROM " + createSVFromList(fromColumns, ", ");
         }
 
-        if (where.size() > 0)
-            query += "WHERE " + createSVFromList(where, " AND ");
+        if (whereClause.size() > 0)
+            query += "WHERE " + createSVFromList(whereClause, " AND ");
 
         if (order.size() > 0)
             query += createSVFromList(order, ", ");
@@ -79,5 +90,14 @@ public class SqlQuery {
 
         //todo groupby clause
 
+    }  */
+
+    @Override
+    public void accept(QueryVisitor visitor) {
+        visitor.visit(this);
+    }
+
+    public List<Column> getSelectColumns() {
+        return selectColumns;
     }
 }

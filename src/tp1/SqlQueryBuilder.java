@@ -14,8 +14,8 @@ public class SqlQueryBuilder {
     private List<Table> fromTables;
     private Condition whereClause;
     private List<Column> orderByColumns;
-    private List<String> groupByColumns;
-    private String limit;
+    private List<Column> groupByColumns;
+    private int limit;
 
     private SqlQueryBuilder() {
         selectColumns = new ArrayList<>();
@@ -32,7 +32,7 @@ public class SqlQueryBuilder {
     }
 
     @NotNull
-    public SqlQueryBuilder from(@Nullable Table tables) {
+    public SqlQueryBuilder from(@Nullable Table... tables) {
         fromTables = asList(tables);
         return this;
     }
@@ -50,7 +50,7 @@ public class SqlQueryBuilder {
     }
 
     @NotNull
-    public SqlQueryBuilder groupBy(String... columns) {
+    public SqlQueryBuilder groupBy(Column... columns) {
         groupByColumns = asList(columns);
         return this;
     }
@@ -60,14 +60,14 @@ public class SqlQueryBuilder {
         if (limit < 0)
             throw new NumberFormatException();
         else {
-            this.limit = String.valueOf(limit);
+            this.limit = limit;
             return this;
         }
     }
 
     public SqlQuery build() throws Exception {
+        return  new SqlQuery(selectColumns, fromTables, whereClause, orderByColumns, groupByColumns, limit );
 
-        return new SqlQuery(selectColumns, fromTables, whereClause, orderByColumns, groupByColumns);
     }
 
     /**
