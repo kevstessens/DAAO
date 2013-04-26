@@ -3,20 +3,21 @@ package tp1;
 import java.io.PrintStream;
 import java.util.List;
 
+
 public class SqlQuery {
     private final List<Column> select;
     private final List<Table> from;
     private final Condition where;
     private final List<Column> order;
-//    private final List<Column> groupByColumns;
+    private final List<Column> groupByColumns;
 
     SqlQuery(List<Column> select, List<Table> from, Condition condition,
-             List<Column> order) {
+             List<Column> order, List<Column> groupByColumns) {
         this.select = select;
         this.from = from;
         this.where = condition;
         this.order = order;
-//        this.groupByColumns = groupByColumns;
+        this.groupByColumns = groupByColumns;
     }
 
     @Override public String toString() {

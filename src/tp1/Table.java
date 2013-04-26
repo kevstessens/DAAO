@@ -10,12 +10,14 @@ import javax.management.Query;
  * To change this template use File | Settings | File Templates.
  */
 public class Table {
-    public StrColumn str(String columnName) {
 
+    public StrColumn str(String columnName) {
+        return new StrColumn();
 
     }
 
     public IntColumn number(String columnName) {
+        return new IntColumn();
 
     }
 }

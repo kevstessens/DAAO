@@ -86,7 +86,7 @@ public class SqlQueryBuilder {
                 builder.append(separator);
             }
         }
-        return str.length() > 0 ? str.substring(0, str.length() - separator.length()) + " " : "";
+        return builder.length() > 0 ?  builder.substring(0, builder.length() - separator.length()) + " " : "";
     }
 
     private <T> String createSVFromList(Iterable<T> list, String separator) {
