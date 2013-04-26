@@ -32,7 +32,7 @@ public class Table {
     }
 
     public IntColumn number(String columnName) {
-        return new IntColumn();
+        return new IntColumn(columnName);
 
     }
 

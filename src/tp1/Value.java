@@ -1,6 +1,8 @@
 package tp1;
 
 import com.sun.istack.internal.NotNull;
+import tp1.visitor.QueryVisitor;
+import tp1.visitor.Visitable;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,7 +11,7 @@ import com.sun.istack.internal.NotNull;
  * Time: 5:09 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Value<T> {
+public class Value<T> implements Visitable{
     private T value;
 
     private Value(T val) {
@@ -26,5 +28,14 @@ public class Value<T> {
 
     public static Value<Integer> val(@NotNull Integer integer) {
         return new Value<Integer>(integer);
+    }
+
+    @Override
+    public void accept(QueryVisitor visitor) {
+        visitor.visit(this);
+    }
+
+    public T getValue(){
+        return value;
     }
 }

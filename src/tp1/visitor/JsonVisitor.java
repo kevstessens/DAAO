@@ -1,8 +1,6 @@
 package tp1.visitor;
 
-import tp1.Column;
-import tp1.SqlQuery;
-import tp1.Table;
+import tp1.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,16 +14,27 @@ public class JsonVisitor implements QueryVisitor {
 
     @Override
     public void visit(SqlQuery sqlQuery) {
-        //To change body of implemented methods use File | Settings | File Templates.
+            //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public String visit(Column column) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public String visit(Table table) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+
+    @Override
+    public String visit(Const constant) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+         public String visit(Value val) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

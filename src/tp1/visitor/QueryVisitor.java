@@ -17,5 +17,9 @@ public interface QueryVisitor {
 
     public String visit(Table table);
 
+    public String visit(Const constant);
+
+    public String visit(Value value);
+
 
 }

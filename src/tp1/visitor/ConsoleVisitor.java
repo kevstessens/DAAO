@@ -1,8 +1,6 @@
 package tp1.visitor;
 
-import tp1.Column;
-import tp1.SqlQuery;
-import tp1.Table;
+import tp1.*;
 
 import java.util.List;
 
@@ -40,9 +38,18 @@ public class ConsoleVisitor implements QueryVisitor {
 
     @Override
     public String visit(Table table) {
-       return table.getName();
+        return table.getName();
     }
 
+    @Override
+    public String visit(Const constant) {
+        return constant.getValue().toString();
+    }
+
+    @Override
+    public String visit(Value val) {
+        return val.getValue().toString();
+    }
 
 
 /*
