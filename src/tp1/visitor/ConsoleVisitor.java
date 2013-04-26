@@ -15,18 +15,36 @@ public class ConsoleVisitor implements QueryVisitor {
 
 
     @Override
-    public void visit(SqlQuery sqlQuery) {
-        List<Column> selectColumns = sqlQuery.getSelectColumns();
+    public String visit(SqlQuery sqlQuery) {
+        final List<Column> selectColumns = sqlQuery.getSelectColumns();
+        final Table fromTable = sqlQuery.getFromTable();
+        final Condition whereCondition = sqlQuery.getWhereCondition();
+
 
         final StringBuilder queryStringBuilder = new StringBuilder("SELECT ");
 
         if (selectColumns.isEmpty())
             queryStringBuilder.append("*");
         else {
-            for (Column column : selectColumns) {
-                column.accept(this);
+            for (int i=0; i< selectColumns.size(); i++) {
+                queryStringBuilder.append(selectColumns.get(i).accept(this));
+                if(i != selectColumns.size()-1){
+                    queryStringBuilder.append(", ");
+                }
             }
         }
+
+        queryStringBuilder.append(" FROM ");
+        if (fromTable.equals(null))
+            return;
+        else {
+            queryStringBuilder.append(fromTable.accept(this));
+        }
+
+        queryStringBuilder.append(" WHERE ");
+        queryStringBuilder.append(whereCondition.accept(this));
+
+
 
         System.out.println(queryStringBuilder);
     }

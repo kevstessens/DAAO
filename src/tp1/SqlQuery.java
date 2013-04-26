@@ -8,15 +8,15 @@ import java.util.List;
 
 public class SqlQuery implements Visitable {
     private final List<Column> selectColumns;
-    private final List<Table> fromColumns;
+    private final Table fromTables;
     private final Condition whereClause;
     private final List<Column> orderByColumns;
     private final List<Column> groupByColumns;
     private final int limit;
 
-    SqlQuery(List<Column> selectColumns, List<Table> fromColumns, Condition condition,List<Column> orderByColumns, List<Column> groupByColumns, int limit) {
+    SqlQuery(List<Column> selectColumns, Table fromTable, Condition condition,List<Column> orderByColumns, List<Column> groupByColumns, int limit) {
         this.selectColumns = selectColumns;
-        this.fromColumns = fromColumns;
+        this.fromTables = fromTable;
         this.whereClause = condition;
         this.groupByColumns = groupByColumns;
         this.orderByColumns = orderByColumns;
@@ -32,10 +32,10 @@ public class SqlQuery implements Visitable {
             builder.append(createSVFromList(selectColumns, "", ", ", ""));
         }
 
-        if (fromColumns.size() == 0)
+        if (fromTables.size() == 0)
             return "";
         else {
-           builder.append(createSVFromList(fromColumns, "", ", ", ""));
+           builder.append(createSVFromList(fromTables, "", ", ", ""));
         }
 
         if (whereClause != null)
@@ -73,10 +73,10 @@ public class SqlQuery implements Visitable {
             builder.append(createSVFromList(selectColumns, ", "));
         }
 
-        if (fromColumns.size() == 0)
+        if (fromTables.size() == 0)
             throw new Exception("At least one table needed to build sqlQuery");
         else {
-            query += "FROM " + createSVFromList(fromColumns, ", ");
+            query += "FROM " + createSVFromList(fromTables, ", ");
         }
 
         if (whereClause.size() > 0)
@@ -93,11 +93,19 @@ public class SqlQuery implements Visitable {
     }  */
 
     @Override
-    public void accept(QueryVisitor visitor) {
-        visitor.visit(this);
+    public String accept(QueryVisitor visitor) {
+        return visitor.visit(this);
     }
 
     public List<Column> getSelectColumns() {
         return selectColumns;
+    }
+
+    public Table getFromTable() {
+        return fromTables;
+    }
+
+    public Condition getWhereCondition() {
+        return whereClause;
     }
 }

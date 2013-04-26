@@ -1,5 +1,8 @@
 package tp1;
 
+import tp1.visitor.QueryVisitor;
+import tp1.visitor.Visitable;
+
 import javax.management.Query;
 import java.util.List;
 
@@ -11,7 +14,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 
-public class Table {
+public class Table implements Visitable{
 
     private List<Column> columns;
     private final String name;
@@ -38,5 +41,10 @@ public class Table {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String accept(QueryVisitor visitor) {
+        return visitor.visit(this);
     }
 }

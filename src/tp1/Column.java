@@ -27,7 +27,7 @@ public class Column<T> extends Value<T> implements Visitable {
     }
 
 
-    public void accept(QueryVisitor visitor) {
-       visitor.visit(this);
+    public String accept(QueryVisitor visitor){
+       return visitor.visit(this);
     }
 }
