@@ -17,7 +17,8 @@ public class MainTp1 {
                 .select(age)
                 .from(t)
                 .where(lastName.startsWith(cons("Lopez"))
-                        .and(age.between(cons(18), cons(21))))
+                        .and(age.between(cons(18), cons(21)))
+                        .and(age.lessThan(cons(18)).not()))
                 .orderBy(age)
                 .limit(5)
                 .build();
@@ -29,9 +30,7 @@ public class MainTp1 {
     }
 
 
-    private static Table table(String student) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
+    private static Table table(String table) { return new Table(table); }
 
     private static Condition condition(Comparation comparation) {
         return null;  //To change body of created methods use File | Settings | File Templates.

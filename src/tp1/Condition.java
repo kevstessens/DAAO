@@ -1,34 +1,37 @@
 package tp1;
 
+import com.sun.istack.internal.NotNull;
 import tp1.visitor.ConsoleVisitor;
 import tp1.visitor.QueryVisitor;
 import tp1.visitor.Visitable;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Martin
- * Date: 4/19/13
- * Time: 4:41 PM
- * To change this template use File | Settings | File Templates.
- */
-public class Condition implements Visitable {
-    private Const constant1;
-    private Const Constant2;
-    private String operator;
+public class Condition extends Statement<Boolean> implements Visitable {
+
+    private final Operator operator;
+    private final Statement<?>[] left;
+    private final Statement<?> right;
+
+    public Condition(Operator operator, Statement<?> left, Statement<?> right) {
+        this.operator = operator;
+        this.left = left;
+        this.right = right;
+    }
+
+    public Condition(Operator operator, Statement<?> unary) {
+        this.operator = operator;
+        left = unary;
+    }
 
 
-    public Condition and(Condition s) {
-        return new Condition();
+    public Condition and(@NotNull Statement<Boolean> other) {
+        return new Condition(Operator.AND, this, other);
     }
-    public Condition or(Condition s) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+    public Condition or(@NotNull Statement<Boolean> other) {
+        return new Condition(Operator.OR, this, other);
     }
+
     public Condition not() {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
-
-    public Condition is() {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return new Condition(Operator.NOT, this);
     }
 
     public String accept(QueryVisitor visitor) {

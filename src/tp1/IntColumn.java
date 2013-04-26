@@ -7,24 +7,20 @@ public class IntColumn extends Column<Integer> {
     }
 
     public Condition greaterThan(Value<Integer> value) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
-    public Condition between(Value<Integer> left, Value<Integer> right) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
-    public Condition g(Value<Integer> value) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return new Condition(Operator.GREAT, this, value);
     }
     public Condition lessThan(Value<Integer> value) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return new Condition(Operator.LESS, this, value);
     }
-    public Condition l(Value<Integer> value) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+    public Condition between(Value<Integer> left, Value<Integer> right) {
+        return greaterThan(left).and(lessThan(right));
     }
+
     public Condition equalTo(Value<Integer> value) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return new Condition(Operator.EQ, this, value);
     }
+
     public Condition ne(Value<Integer> value) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return new Condition(Operator.NE, this, value);
     }
 }

@@ -4,23 +4,26 @@
     <list default="true" id="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" name="Default" comment="" />
     <ignored path="DAOO.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Column.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366921216305" ignored="false" />
+    <file path="/Column.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367004697171" ignored="false" />
     <file path="/Const.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366981667135" ignored="false" />
     <file path="/a.dummy" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366402245522" ignored="false" />
-    <file path="/Value.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366983823864" ignored="false" />
-    <file path="/IntColumn.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366949215833" ignored="false" />
-    <file path="/StrColumn.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366949081433" ignored="false" />
+    <file path="/Value.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367001554211" ignored="false" />
+    <file path="/IntColumn.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367002346772" ignored="false" />
+    <file path="/StrColumn.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367002728969" ignored="false" />
     <file path="/Table.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366982018135" ignored="false" />
-    <file path="/Condition.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366981946784" ignored="false" />
+    <file path="/Condition.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367005022900" ignored="false" />
     <file path="/Sortable.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366397912603" ignored="false" />
-    <file path="/fragment.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366982955679" ignored="false" />
-    <file path="/MainTp1.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366405246618" ignored="false" />
+    <file path="/fragment.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367004581100" ignored="false" />
+    <file path="/MainTp1.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367005192030" ignored="false" />
     <file path="/Dummy.txt" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366349488193" ignored="false" />
     <file path="/SqlQuery.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366950186992" ignored="false" />
     <file path="/SqlQueryBuilder.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366950011027" ignored="false" />
     <file path="/QueryVisitor.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366983709290" ignored="false" />
     <file path="/ConsoleVisitor.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366983922192" ignored="false" />
     <file path="/JsonVisitor.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1366983944156" ignored="false" />
+    <file path="/Operator.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367001987670" ignored="false" />
+    <file path="/A.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367003648474" ignored="false" />
+    <file path="/BoolColumn.java" changelist="b1be93e0-15e6-4364-a54d-9baeddc0c8fa" time="1367004596965" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +38,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -43,6 +47,7 @@
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="true" />
@@ -58,6 +63,7 @@
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="true" />
@@ -67,7 +73,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -77,59 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ConsoleVisitor.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tp1/visitor/ConsoleVisitor.java">
+      <file leaf-file-name="MainTp1.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tp1/MainTp1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="46" selection-start="268" selection-end="268" vertical-scroll-proportion="0.3558394">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Condition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tp1/Condition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="32" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tp1/Table.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="52" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Column.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tp1/Column.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="23" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Visitable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tp1/visitor/Visitable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryVisitor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tp1/visitor/QueryVisitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+            <state line="16" column="24" selection-start="439" selection-end="439" vertical-scroll-proportion="0.2596538">
               <folding />
             </state>
           </provider>
@@ -138,7 +94,79 @@
       <file leaf-file-name="SqlQuery.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tp1/SqlQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="25" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.0">
+            <state line="8" column="13" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsoleVisitor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tp1/visitor/ConsoleVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntColumn.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tp1/IntColumn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="14" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoolColumn.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tp1/BoolColumn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="1" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Condition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tp1/Condition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="20" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Column.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tp1/Column.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="40" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Operator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tp1/Operator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="4" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Object.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="13" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryVisitor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tp1/visitor/QueryVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="17" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,30 +182,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/tp1/SqlQueryBuilder.java" />
-        <option value="$PROJECT_DIR$/src/tp1/MainTp1.java" />
-        <option value="$PROJECT_DIR$/src/tp1/QueryVisitor.java" />
-        <option value="$PROJECT_DIR$/src/tp1/ConsoleVisitor.java" />
-        <option value="$PROJECT_DIR$/src/tp1/StrColumn.java" />
-        <option value="$PROJECT_DIR$/src/tp1/IntColumn.java" />
-        <option value="$PROJECT_DIR$/src/tp1/Const.java" />
-        <option value="$PROJECT_DIR$/src/tp1/Value.java" />
-        <option value="$PROJECT_DIR$/src/tp1/visitor/JsonVisitor.java" />
-        <option value="$PROJECT_DIR$/src/tp1/Column.java" />
         <option value="$PROJECT_DIR$/src/tp1/Table.java" />
         <option value="$PROJECT_DIR$/src/tp1/visitor/Visitable.java" />
-        <option value="$PROJECT_DIR$/src/tp1/Condition.java" />
         <option value="$PROJECT_DIR$/src/tp1/visitor/ConsoleVisitor.java" />
         <option value="$PROJECT_DIR$/src/tp1/SqlQuery.java" />
         <option value="$PROJECT_DIR$/src/tp1/visitor/QueryVisitor.java" />
+        <option value="$PROJECT_DIR$/src/tp1/AND.java" />
+        <option value="$PROJECT_DIR$/src/tp1/Value.java" />
+        <option value="$PROJECT_DIR$/src/tp1/Statement.java" />
+        <option value="$PROJECT_DIR$/src/tp1/Operator.java" />
+        <option value="$PROJECT_DIR$/src/tp1/IntColumn.java" />
+        <option value="$PROJECT_DIR$/src/tp1/StrColumn.java" />
+        <option value="$PROJECT_DIR$/src/tp1/visitor/A.java" />
+        <option value="$PROJECT_DIR$/src/tp1/Column.java" />
+        <option value="$PROJECT_DIR$/src/tp1/BoolColumn.java" />
+        <option value="$PROJECT_DIR$/src/tp1/Condition.java" />
+        <option value="$PROJECT_DIR$/src/tp1/MainTp1.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="52" />
-    <option name="width" value="1299" />
-    <option name="height" value="715" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -207,31 +233,46 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
+      <pane id="Scope" />
+      <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="DAAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAOO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAOO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DAAO" />
+              <option name="myItemId" value="DAOO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DAAO" />
+              <option name="myItemId" value="DAOO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DAAO" />
+              <option name="myItemId" value="DAOO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DAAO" />
+              <option name="myItemId" value="DAOO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -245,11 +286,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DAAO" />
+              <option name="myItemId" value="DAOO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DAAO" />
+              <option name="myItemId" value="DAOO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -267,21 +308,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAOO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,13 +323,17 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tp1" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="tp1" />
     </key>
@@ -367,12 +397,7 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
@@ -407,32 +432,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="52" width="1299" height="715" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39888424" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22222222" sideWeight="0.6722689" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19942611" sideWeight="0.6733167" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.265252" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -458,7 +483,6 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
@@ -468,9 +492,11 @@
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -495,100 +521,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tp1/Column.java">
+    <entry file="file://$PROJECT_DIR$/src/tp1/visitor/A.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="81" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" />
+        <state line="11" column="36" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/Comparation.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" />
+        <state line="128" column="13" selection-start="5167" selection-end="5167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/IntColumn.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="52" selection-start="119" selection-end="119" vertical-scroll-proportion="0.10330579" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/SqlQueryBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="61" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.0" />
+        <state line="51" column="19" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tp1/Const.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="1" selection-start="680" selection-end="826" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="71" selection-start="708" selection-end="708" vertical-scroll-proportion="0.6818182" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/visitor/JsonVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="46" selection-start="409" selection-end="409" vertical-scroll-proportion="0.32274246" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/MainTp1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.025083613" />
+        <state line="15" column="13" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tp1/StrColumn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="46" selection-start="127" selection-end="127" vertical-scroll-proportion="0.17558528" />
+        <state line="16" column="34" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp1/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="36" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="13" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp1/IntColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="14" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp1/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp1/BoolColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="1" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tp1/Condition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="32" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/Column.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="23" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="52" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/visitor/Visitable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/SqlQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="25" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp1/visitor/QueryVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+        <state line="21" column="20" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tp1/visitor/ConsoleVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="268" selection-end="268" vertical-scroll-proportion="0.3558394">
+        <state line="13" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp1/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="40" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp1/visitor/QueryVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp1/SqlQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp1/MainTp1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="24" selection-start="439" selection-end="439" vertical-scroll-proportion="0.2596538">
           <folding />
         </state>
       </provider>

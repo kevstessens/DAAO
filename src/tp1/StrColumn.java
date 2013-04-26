@@ -11,10 +11,18 @@ public class StrColumn extends Column<String>{
 
 
     public Condition equals(Value<String> value) {
-        return null;
+        return new Condition(Operator.EQ, this, value);
     }
 
     public Condition startsWith(Value<String> value) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return new Condition(Operator.STARTS, this, value);
     }
+
+    public Condition contains(Value<String> value) {
+        return new Condition(Operator.CONTAINS, this, value);
+    }
+
+
+
+
 }
