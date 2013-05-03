@@ -6,21 +6,21 @@ public class IntColumn extends Column<Integer> {
         super(name);
     }
 
-    public Condition greaterThan(Value<Integer> value) {
-        return new Condition(Operator.GREAT, this, value);
+    public BinaryCondition greaterThan(Value<Integer> value) {
+        return new BinaryCondition(Operator.GREAT, this, value);
     }
-    public Condition lessThan(Value<Integer> value) {
-        return new Condition(Operator.LESS, this, value);
+    public BinaryCondition lessThan(Value<Integer> value) {
+        return new BinaryCondition(Operator.LESS, this, value);
     }
-    public Condition between(Value<Integer> left, Value<Integer> right) {
+    public BinaryCondition between(Value<Integer> left, Value<Integer> right) {
         return greaterThan(left).and(lessThan(right));
     }
 
-    public Condition equalTo(Value<Integer> value) {
-        return new Condition(Operator.EQ, this, value);
+    public BinaryCondition equalTo(Value<Integer> value) {
+        return new BinaryCondition(Operator.EQ, this, value);
     }
 
-    public Condition notEqual(Value<Integer> value) {
-        return new Condition(Operator.NE, this, value);
+    public BinaryCondition notEqual(Value<Integer> value) {
+        return new BinaryCondition(Operator.NE, this, value);
     }
 }

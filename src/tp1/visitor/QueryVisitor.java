@@ -17,8 +17,6 @@ public interface QueryVisitor {
 
     public void visit(Table table);
 
-    public void visit(Constant constant);
-
     public void visit(Value value);
 
     public void visit(Condition condition);

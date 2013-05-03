@@ -9,20 +9,16 @@ public class StrColumn extends Column<String>{
         super(name);
     }
 
-
-    public Condition equals(Value<String> value) {
-        return new Condition(Operator.EQ, this, value);
+    public BinaryCondition equals(Value<String> value) {
+        return new BinaryCondition(Operator.EQ, this, value);
     }
 
-    public Condition startsWith(Value<String> value) {
-        return new Condition(Operator.STARTS, this, value);
+    public BinaryCondition startsWith(Value<String> value) {
+        return new BinaryCondition(Operator.STARTS, this, value);
     }
 
     public Condition contains(Value<String> value) {
-        return new Condition(Operator.CONTAINS, this, value);
+        return new BinaryCondition(Operator.CONTAINS, this, value);
     }
-
-
-
 
 }

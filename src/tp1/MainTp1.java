@@ -26,7 +26,7 @@ public class MainTp1 {
         ConsoleVisitor consoleVisitor = new ConsoleVisitor();
         query.accept(consoleVisitor);
 
-       // query.visit(System.out);
+        consoleVisitor.visit(query);
     }
 
 

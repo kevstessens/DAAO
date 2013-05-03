@@ -54,22 +54,22 @@ public class ConsoleVisitor implements QueryVisitor {
 
    @Override
     public void visit(Column column) {
+       System.out.println(column.getName());
     }
 
     @Override
     public void visit(Table table) {
+        System.out.println(table.getName());
     }
-
-    @Override
-    public void visit(Constant constant) {
-    }
-
     @Override
     public void visit(Value val) {
+        System.out.println(val.getValue());
     }
 
     @Override
     public void visit(Condition condition) {
+        condition.accept(this);
+
 
     }
 

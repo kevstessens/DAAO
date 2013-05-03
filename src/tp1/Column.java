@@ -1,11 +1,8 @@
 package tp1;
 
-
-import tp1.visitor.ConsoleVisitor;
 import tp1.visitor.QueryVisitor;
 import tp1.visitor.Visitable;
 
-import javax.management.Query;
 
 public class Column<T extends Comparable<T>> extends Value<T> implements Visitable {
     private final String columnName;
@@ -14,40 +11,39 @@ public class Column<T extends Comparable<T>> extends Value<T> implements Visitab
         this.columnName = columnName;
     }
 
-    public Condition isNull() {
-        return null;
+    public UnitCondition isNull() {
+        return new UnitCondition(Operator.NULL, this);
     }
 
-    public Condition isNotNull() {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+    public UnitCondition isNotNull() {
+        return new UnitCondition(Operator.NOT_NULL, this);
     }
 
-    public Condition greaterThan(Value<Integer> value) {
-        return new Condition(Operator.GREAT, this, value);
+    public BinaryCondition greaterThan(Value<Integer> value) {
+        return new BinaryCondition(Operator.GREAT, this, value);
     }
 
-    public Condition greaterEqualThan(Value<Integer> value) {
-        return new Condition(Operator.GREAT, this, value);
+    public BinaryCondition greaterEqualThan(Value<Integer> value) {
+        return new BinaryCondition(Operator.GREAT, this, value);
     }
 
-    public Condition lessThan(Value<Integer> value) {
-        return new Condition(Operator.LESS, this, value);
+    public BinaryCondition lessThan(Value<Integer> value) {
+        return new BinaryCondition(Operator.LESS, this, value);
     }
 
-    public Condition equalTo(Value<Integer> value) {
-        return new Condition(Operator.EQ, this, value);
+    public BinaryCondition equalTo(Value<Integer> value) {
+        return new BinaryCondition(Operator.EQ, this, value);
     }
 
-    public Condition notEqual(Value<Integer> value) {
-        return new Condition(Operator.NE, this, value);
+    public BinaryCondition notEqual(Value<Integer> value) {
+        return new BinaryCondition(Operator.NE, this, value);
     }
 
     public String getName(){
         return columnName;
     }
 
-
     public void accept(QueryVisitor visitor){
-
+        visitor.visit(this);
     }
 }

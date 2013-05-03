@@ -16,5 +16,5 @@ public enum Operator {
     NE,
     STARTS,
     CONTAINS,
-    NOT
+    NULL, NOT_NULL, NOT
 }

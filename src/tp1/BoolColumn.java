@@ -8,15 +8,15 @@ public class BoolColumn extends Column<Boolean> {
         super(name);
     }
 
-    public Condition and(@NotNull Statement<Boolean> other) {
-        return new Condition(Operator.AND, this, other);
+    public BinaryCondition and(@NotNull Statement<Boolean> other) {
+        return new BinaryCondition(Operator.AND, this, other);
     }
-    public Condition or(@NotNull Statement<Boolean> other) {
-        return new Condition(Operator.OR, this, other);
+    public BinaryCondition or(@NotNull Statement<Boolean> other) {
+        return new BinaryCondition(Operator.OR, this, other);
     }
 
-    public Condition not() {
-        return new Condition(Operator.NOT, this);
+    public UnitCondition not() {
+        return new UnitCondition(Operator.NOT, this);
     }
 
 }

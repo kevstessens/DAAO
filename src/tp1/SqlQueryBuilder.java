@@ -4,18 +4,18 @@ import com.sun.istack.internal.NotNull;
 import com.sun.istack.internal.Nullable;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import static java.util.Arrays.asList;
 
 public class SqlQueryBuilder {
     private List<Column> selectColumns;
-    private List<Table> fromTables;
+    private Table fromTable;
     private Condition whereClause;
     private List<Column> orderByColumns;
     private List<Column> groupByColumns;
     private int limit;
+
 
     private SqlQueryBuilder() {
         selectColumns = new ArrayList<>();
@@ -32,8 +32,8 @@ public class SqlQueryBuilder {
     }
 
     @NotNull
-    public SqlQueryBuilder from(@Nullable Table... tables) {
-        fromTables = asList(tables);
+    public SqlQueryBuilder from(@Nullable Table table) {
+        fromTable = table;
         return this;
     }
 
@@ -66,9 +66,11 @@ public class SqlQueryBuilder {
     }
 
     public SqlQuery build() throws Exception {
-        return  new SqlQuery(selectColumns, fromTables, whereClause, orderByColumns, groupByColumns, limit );
+        return  new SqlQuery(selectColumns, fromTable, whereClause, orderByColumns, groupByColumns, limit );
 
     }
+
+
 
     /**
      * Creates a String of Separated Values from a List of T Objects by a String separator

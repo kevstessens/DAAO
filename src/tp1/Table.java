@@ -36,7 +36,6 @@ public class Table implements Visitable{
 
     public IntColumn number(String columnName) {
         return new IntColumn(columnName);
-
     }
 
     public String getName() {
@@ -44,7 +43,7 @@ public class Table implements Visitable{
     }
 
     @Override
-    public String accept(QueryVisitor visitor) {
-        return visitor.visit(this);
+    public void accept(QueryVisitor visitor) {
+        visitor.visit(this);
     }
 }
