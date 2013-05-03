@@ -1,6 +1,8 @@
 package tp1;
 
 import com.sun.istack.internal.NotNull;
+import tp1.visitor.QueryVisitor;
+import tp1.visitor.Visitable;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,6 +26,11 @@ public class BinaryCondition extends Condition{
 
     public BinaryCondition or(@NotNull Statement<Boolean> other) {
         return new BinaryCondition(Operator.OR, this, other);
+    }
+
+    public void accept(QueryVisitor visitor){
+        super.accept(visitor);
+        visitor.visit(right);
     }
 
 }

@@ -69,8 +69,11 @@ public class ConsoleVisitor implements QueryVisitor {
     @Override
     public void visit(Condition condition) {
         condition.accept(this);
+    }
 
-
+    @Override
+    public void visit(Operator operator) {
+        System.out.println(operator.getName());
     }
 
 

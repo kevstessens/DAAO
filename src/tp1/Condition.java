@@ -5,8 +5,8 @@ import tp1.visitor.Visitable;
 
 public class Condition extends Statement<Boolean> implements Visitable {
 
-    private final Operator operator;
-    private final Statement<?> left;
+    protected final Operator operator;
+    protected final Statement<?> left;
 
 
     public Condition(Operator operator, Statement<?> unary) {
@@ -14,11 +14,12 @@ public class Condition extends Statement<Boolean> implements Visitable {
         left = unary;
     }
 
-    public void accept(QueryVisitor visitor) {
-        visitor.visit(this);
-    }
-
     public UnitCondition not() {
         return new UnitCondition(Operator.NOT, this);
+    }
+
+    public void accept(QueryVisitor visitor){
+        visitor.visit(operator);
+        visitor.visit(left);
     }
 }

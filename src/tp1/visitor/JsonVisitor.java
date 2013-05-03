@@ -14,7 +14,6 @@ public class JsonVisitor implements QueryVisitor {
 
     @Override
     public void visit(SqlQuery sqlQuery) {
-            //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
@@ -28,14 +27,15 @@ public class JsonVisitor implements QueryVisitor {
     }
 
     @Override
-    public void visit(Constant constant) {
-    }
-
-    @Override
     public void visit(Value value) {
     }
 
     @Override
     public void visit(Condition condition) {
+    }
+
+    @Override
+    public void visit(Operator operator) {
+
     }
 }

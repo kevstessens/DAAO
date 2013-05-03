@@ -8,13 +8,24 @@ package tp1;
  * To change this template use File | Settings | File Templates.
  */
 public enum Operator {
-    AND,
-    OR,
-    LESS,
-    GREAT,
-    EQ,
-    NE,
-    STARTS,
-    CONTAINS,
-    NULL, NOT_NULL, NOT
+    AND("AND"),
+    OR("OR"),
+    LESS("LESS"),
+    GREAT("GREAT"),
+    EQ("EQUAL"),
+    NE("NOT EQUAL"),
+    STARTS("STARTS WITH"),
+    CONTAINS("CONTAINS"),
+    NULL("IS NULL"),
+    NOT_NULL("IS NOT NULL"),
+    NOT("NOT");
+
+    private final String name;
+    private Operator(String name){
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

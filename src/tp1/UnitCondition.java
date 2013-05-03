@@ -1,5 +1,8 @@
 package tp1;
 
+import tp1.visitor.QueryVisitor;
+import tp1.visitor.Visitable;
+
 /**
  * Created with IntelliJ IDEA.
  * User: laura
@@ -12,6 +15,7 @@ public class UnitCondition extends Condition{
     public UnitCondition(Operator operator, Statement<?> unary) {
         super(operator, unary);
     }
+
 
 
 }

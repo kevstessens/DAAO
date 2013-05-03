@@ -21,5 +21,9 @@ public interface QueryVisitor {
 
     public void visit(Condition condition);
 
+    public void visit(Operator operator);
+
+    public void visit(Statement statement);
+
 
 }
