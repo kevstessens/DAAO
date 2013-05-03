@@ -18,23 +18,24 @@ public class JsonVisitor implements QueryVisitor {
     }
 
     @Override
-    public String visit(Column column) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    public void visit(Column column) {
+
     }
 
     @Override
-    public String visit(Table table) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
+    public void visit(Table table) {
 
-
-    @Override
-    public String visit(Const constant) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-         public String visit(Value val) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    public void visit(Constant constant) {
+    }
+
+    @Override
+    public void visit(Value value) {
+    }
+
+    @Override
+    public void visit(Condition condition) {
     }
 }

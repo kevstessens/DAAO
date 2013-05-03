@@ -20,7 +20,7 @@ public class IntColumn extends Column<Integer> {
         return new Condition(Operator.EQ, this, value);
     }
 
-    public Condition ne(Value<Integer> value) {
+    public Condition notEqual(Value<Integer> value) {
         return new Condition(Operator.NE, this, value);
     }
 }

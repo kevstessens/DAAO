@@ -3,7 +3,7 @@ package tp1;
 
 import tp1.visitor.ConsoleVisitor;
 
-import static tp1.Const.cons;
+import static tp1.Constant.cons;
 import static tp1.SqlQueryBuilder.sqlQuery;
 
 public class MainTp1 {
@@ -32,17 +32,10 @@ public class MainTp1 {
 
     private static Table table(String table) { return new Table(table); }
 
-    private static Condition condition(Comparation comparation) {
+    private static Condition condition() {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
-    private static Comparation comparation(String s) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
 
-    protected static Condition condition(String s) {
-        return null;
-
-    }
 
 }

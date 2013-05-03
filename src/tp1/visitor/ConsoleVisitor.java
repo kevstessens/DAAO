@@ -15,8 +15,11 @@ public class ConsoleVisitor implements QueryVisitor {
 
 
     @Override
-    public String visit(SqlQuery sqlQuery) {
-        final List<Column> selectColumns = sqlQuery.getSelectColumns();
+    public void visit(SqlQuery sqlQuery) {
+
+        sqlQuery.accept(this);
+
+      /*  final List<Column> selectColumns = sqlQuery.getSelectColumns();
         final Table fromTable = sqlQuery.getFromTable();
         final Condition whereCondition = sqlQuery.getWhereCondition();
 
@@ -46,27 +49,28 @@ public class ConsoleVisitor implements QueryVisitor {
 
 
 
-        System.out.println(queryStringBuilder);
+        System.out.println(queryStringBuilder);  */
     }
 
    @Override
-    public String visit(Column column) {
-        return column.getName();
+    public void visit(Column column) {
     }
 
     @Override
-    public String visit(Table table) {
-        return table.getName();
+    public void visit(Table table) {
     }
 
     @Override
-    public String visit(Const constant) {
-        return constant.getValue().toString();
+    public void visit(Constant constant) {
     }
 
     @Override
-    public String visit(Value val) {
-        return val.getValue().toString();
+    public void visit(Value val) {
+    }
+
+    @Override
+    public void visit(Condition condition) {
+
     }
 
 

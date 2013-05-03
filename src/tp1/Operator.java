@@ -13,5 +13,8 @@ public enum Operator {
     LESS,
     GREAT,
     EQ,
-    NE, STARTS, CONTAINS, NOT
+    NE,
+    STARTS,
+    CONTAINS,
+    NOT
 }

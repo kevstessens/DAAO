@@ -9,6 +9,6 @@ package tp1.visitor;
  */
 public interface Visitable {
 
-    public String accept(QueryVisitor visitor);
+    public void accept(QueryVisitor visitor);
 
 }

@@ -8,7 +8,7 @@ import java.util.List;
 
 public class SqlQuery implements Visitable {
     private final List<Column> selectColumns;
-    private final Table fromTables;
+    private final Table fromTable;
     private final Condition whereClause;
     private final List<Column> orderByColumns;
     private final List<Column> groupByColumns;
@@ -16,7 +16,7 @@ public class SqlQuery implements Visitable {
 
     SqlQuery(List<Column> selectColumns, Table fromTable, Condition condition,List<Column> orderByColumns, List<Column> groupByColumns, int limit) {
         this.selectColumns = selectColumns;
-        this.fromTables = fromTable;
+        this.fromTable = fromTable;
         this.whereClause = condition;
         this.groupByColumns = groupByColumns;
         this.orderByColumns = orderByColumns;
@@ -32,10 +32,10 @@ public class SqlQuery implements Visitable {
             builder.append(createSVFromList(selectColumns, "", ", ", ""));
         }
 
-        if (fromTables.size() == 0)
+        if (fromTable.size() == 0)
             return "";
         else {
-           builder.append(createSVFromList(fromTables, "", ", ", ""));
+           builder.append(createSVFromList(fromTable, "", ", ", ""));
         }
 
         if (whereClause != null)
@@ -73,10 +73,10 @@ public class SqlQuery implements Visitable {
             builder.append(createSVFromList(selectColumns, ", "));
         }
 
-        if (fromTables.size() == 0)
+        if (fromTable.size() == 0)
             throw new Exception("At least one table needed to build sqlQuery");
         else {
-            query += "FROM " + createSVFromList(fromTables, ", ");
+            query += "FROM " + createSVFromList(fromTable, ", ");
         }
 
         if (whereClause.size() > 0)
@@ -93,19 +93,18 @@ public class SqlQuery implements Visitable {
     }  */
 
     @Override
-    public String accept(QueryVisitor visitor) {
-        return visitor.visit(this);
-    }
+    public void accept(QueryVisitor visitor) {
+        for (Column selectColumn : selectColumns) {
+            visitor.visit(selectColumn);
+        }
+        visitor.visit(fromTable);
+        visitor.visit(whereClause);
+        for (Column orderByColumn : orderByColumns) {
+            visitor.visit(orderByColumn);
+        }
+        for (Column groupByColumn : groupByColumns) {
+            visitor.visit(groupByColumn);
+        }
 
-    public List<Column> getSelectColumns() {
-        return selectColumns;
-    }
-
-    public Table getFromTable() {
-        return fromTables;
-    }
-
-    public Condition getWhereCondition() {
-        return whereClause;
     }
 }

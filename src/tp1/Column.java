@@ -38,7 +38,7 @@ public class Column<T extends Comparable<T>> extends Value<T> implements Visitab
         return new Condition(Operator.EQ, this, value);
     }
 
-    public Condition ne(Value<Integer> value) {
+    public Condition notEqual(Value<Integer> value) {
         return new Condition(Operator.NE, this, value);
     }
 
@@ -47,7 +47,7 @@ public class Column<T extends Comparable<T>> extends Value<T> implements Visitab
     }
 
 
-    public String accept(QueryVisitor visitor){
-       return visitor.visit(this);
+    public void accept(QueryVisitor visitor){
+
     }
 }

@@ -11,17 +11,17 @@ import tp1.*;
  */
 public interface QueryVisitor {
 
-    public String visit(SqlQuery sqlQuery);
+    public void visit(SqlQuery sqlQuery);
 
-    public String visit(Column column);
+    public void visit(Column column);
 
-    public String visit(Table table);
+    public void visit(Table table);
 
-    public String visit(Const constant);
+    public void visit(Constant constant);
 
-    public String visit(Value value);
+    public void visit(Value value);
 
-    public String visit(Condition condition);
+    public void visit(Condition condition);
 
 
 }

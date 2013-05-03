@@ -1,7 +1,6 @@
 package tp1;
 
 import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
 import tp1.visitor.QueryVisitor;
 import tp1.visitor.Visitable;
 
@@ -13,19 +12,19 @@ import tp1.visitor.Visitable;
  * To change this template use File | Settings | File Templates.
  *
  */
-public class Const<T> extends Value<T> implements Visitable {
+public class Constant<T> extends Value<T> implements Visitable {
     private T str;
 
-    private Const(T str) {
+    private Constant(T str) {
         this.str = str;
     }
 
-    public static Const<String> cons(@NotNull String str) {
-        return new Const<String>(str);
+    public static Constant<String> cons(@NotNull String str) {
+        return new Constant<String>(str);
     }
 
-    public static Const<Integer> cons(@NotNull Integer integer) {
-        return new Const<Integer>(integer);
+    public static Constant<Integer> cons(@NotNull Integer integer) {
+        return new Constant<Integer>(integer);
     }
 
     @Override

@@ -8,7 +8,7 @@ import tp1.visitor.Visitable;
 public class Condition extends Statement<Boolean> implements Visitable {
 
     private final Operator operator;
-    private final Statement<?>[] left;
+    private final Statement<?> left;
     private final Statement<?> right;
 
     public Condition(Operator operator, Statement<?> left, Statement<?> right) {
@@ -34,7 +34,7 @@ public class Condition extends Statement<Boolean> implements Visitable {
         return new Condition(Operator.NOT, this);
     }
 
-    public String accept(QueryVisitor visitor) {
-        return visitor.visit(this);
+    public void accept(QueryVisitor visitor) {
+        visitor.visit(this);
     }
 }
