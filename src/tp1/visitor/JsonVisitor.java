@@ -38,4 +38,9 @@ public class JsonVisitor implements QueryVisitor {
     public void visit(Operator operator) {
 
     }
+
+    @Override
+    public void visit(Statement statement) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
 }

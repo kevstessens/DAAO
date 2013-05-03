@@ -26,4 +26,5 @@ public interface QueryVisitor {
     public void visit(Statement statement);
 
 
+
 }

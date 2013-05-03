@@ -18,7 +18,9 @@ public class SqlQueryBuilder {
 
 
     private SqlQueryBuilder() {
-        selectColumns = new ArrayList<>();
+        selectColumns = new ArrayList<Column>();
+        orderByColumns = new ArrayList<Column>();
+        groupByColumns = new ArrayList<Column>();
     }
 
     public static SqlQueryBuilder sqlQuery() {

@@ -76,6 +76,12 @@ public class ConsoleVisitor implements QueryVisitor {
         System.out.println(operator.getName());
     }
 
+    @Override
+    public void visit(Statement statement) {
+
+        //necesiito saber si es condition o valuee!!
+    }
+
 
 /*
     final StringBuilder builder = new StringBuilder("SELECT ");
